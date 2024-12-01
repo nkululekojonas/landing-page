@@ -32,7 +32,7 @@ Check out the live version of the project here: [Landing Page Demo](nkululekojon
 ---
 
 ## 📸 **Preview**
-![Landing Page Preview](landingpage.png)  
+![Landing Page Preview](./images/landingpage.png)  
 ---
 
 ## 🔧 **Installation & Usage**
