@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    /* Color Variables */
+    --color-dark-bg: #1F2937;
+    --color-light-bg: #1F2937;
+    --color-primary: #3883F6;
+    --color-text-dark: #F9FAF8;
+    --color-text-light: #E5E7EB;
+
+    /* Font Styles */
+    --font-large: 48px;
+    --font-medium: 24px;
+    --font-small: 16px;
+
+    --font-bold: 900;
+
+    /* Spacing Variables */
+    --padding-standard: 40px;
+    --margin-standard: 40px;
+}
+
 *, 
 *::after,
 *::before {
@@ -10,48 +30,65 @@
 
 body {
     display: flex;
+    line-height: 1.3;
     min-height: 100vh;
     flex-direction: column;
     font-family: Roboto, sans-serif;
 }
 
-ul {
-    list-style-type: none;
+/* Typography */
+.title {
+    font-size: var(--font-large);
+    font-weight: var(--font-bold);
 }
 
+p {
+    font-size: var(--font-small);
+    color: var(--color-text-light);
+}
+
+/* Handle links */
 a {
-    color: #E5E7EB;
     text-decoration: none;
+    color: var(--color-text-light);
 }
 
 button {
-    background-color: #3883F6;
+    border: none;
+    border-radius: 10px;
+    font-weight: var(--font-bold);
+    color: var(--color-text-light);
+    background-color: var(--color-primary);
 }
 
-.hero-section {
+.section {
     min-height: 300px;
-    background-color: #1F2937;
+}
+
+.hero {
+    background-color: var(--color-dark-bg);
 }
 
 .hero-nav {
     display: flex;
-    margin: 40px;
     justify-content: space-between;
+    margin: var(--margin-standard);
 }
 
 .logo {
-    color: #F9FAF8;
-    font-size: 24px;
+    font-size: var(--font-medium);
+    color: var(--color-text-light);
 }
 
-.nav-links {
-    display: flex;
+.nav-bar {
     gap: 20px;
+    display: flex;
+    list-style-type: none;
 }
 
-.nav-link {
-    font-size: 18px;
-    font-weight: 700;
+.nav-bar li {
+    font-size: var(--font-small);
+    font-weight: var(--font-bold);
 }
 
 .hero-info {
@@ -61,43 +98,24 @@ button {
     align-items: center;
 }
 
-.hero-title {
-    flex: 1;
-    color: #F9FAF8;
-    font-size: 48px;
-    font-weight: 900;
-}
-
-.hero-info > img {
-    flex: 1;
-    width: 100px
-    height: 100px;
-    border-radius: 100%;
-}
-
 .text-container {
-    flex: 1;
-    gap: 16px;
+    gap: 11px;
     display: flex;
     flex-direction: column;
 }
 
-.text-container > p {
-    color: #E5E7EB;
-    font-size: 16px;
+.text-container > h2 {
+    color: var(--color-text-light);
 }
 
 .text-container > button {
-    width: 100px;
-    height: 30px;
-    color: #E5E7EB;
-    border: none;
-    border-radius: 13px;
+    width: 150px;
+    height: 50px;
 }
 
 .profile-container {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .memoji {
@@ -105,31 +123,28 @@ button {
     border-radius: 55px;
 }
 
+main {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
 .main-links {
     order: 2;
     padding: 40px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    min-height: 300px;
-    text-align: center;
-}
 
-.main-links > h2 {
-    min-height: 100px;
-    color: #1F1937;
-    font-size: 38px;
-    font-weight: 900;
+.main-links > h2  {
+    color: var(--color-text-dark);;
 }
 
 .card-container {
+    gap: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px;
-    margin-top: -30px;
+    margin-top: var(--margin-standard);
  }
 
  .card {
@@ -151,17 +166,16 @@ main {
      flex-direction: column;
  }
 
-.skill-title {
-    font-size: 48px;
-    font-weight: 900;
-    margin-bottom: 40px;
+.skill-section > h1 {
+    color: var(--color-text-dark);
+    margin-bottom: var(--margin-standard);
 }
 
 .skill-icons {
     gap: 50px;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding-top: var(--padding-standard);
 }
 
 .skill-icon {
@@ -169,17 +183,37 @@ main {
     max-height: 150px;
 }
 
-.html-img,
-.css-img,
-.js-img {
+.icon-img {
     width: 150px;
 }
 
 footer {
     display: flex;
-    color: #F9FAF8;
-    min-height: 60px;
+    min-height: 80px;
     align-items: center;
     justify-content: center;
-    background-color: #1F2937;
+    color: var(--color-text-light); 
+    background-color: var(--color-dark-bg);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-container {
+        margin: 20px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-icons {
+        flex-direction: column;
+        align-items: center;
+    }
 }

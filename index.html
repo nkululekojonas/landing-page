@@ -2,48 +2,47 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landing Page | TOP</title>
-
+        <title>Jonas - Web Developer Portfolio</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
-    
+
     <body>
-        <header class="hero-section">
+        <header class="hero section">
             <nav class="hero-nav">
                 <h1 class="logo">jonas.dev</h1>
 
-                <ul class="nav-links">
-                    <li class="nav-link"><a href="#">About Me</a></li>
-                    <li class="nav-link"><a href="#">Resume</a></li>
-                    <li class="nav-link"><a href="#">Contact</a></li>
+                <ul class="nav-bar">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <div class="hero-info">
+            <section  class="hero-info">
                 <div class="text-container">
-                    <h2 class="hero-title">
+                    <h2 class="title">
                         Hello 👋 ! Im Jonas a web developer from Sydney.
                     </h2>
 
                     <p>
-                        This is a home for all the projects, I've worked on, you can 
+                        This is a home for all the projects, I've worked on, you can
                         also find links to all my socials and any relevant thoughts.
                     </p>
 
-                    <button type="button">Reach Out</button>
+                    <button aria-label="Reach Out">Reach Out</button>
                 </div>
-   
+
                 <div class="profile-container">
-                    <img class="memoji" alt="memoji of man" src="./images/memoji.jpg">
+                    <img class="memoji" alt="Jonas' avatar" src="./images/memoji.jpg" loading="lazy">
                 </div>
-            </div>
+            </section>
         </header>
 
-        <main class="main-content">
+        <main class="section">
             <div class="main-links">
-                <h2>You can find me hanging out here!<h2>
-                        
+                <h1 class="title">You can find me here!</h1>
                 <div class="card-container">
                     <div class="card">
                         <img class="card-image" alt="Github Icon" src="./images/github-icon.svg">
@@ -60,19 +59,19 @@
             </div>
 
             <div class="skill-section">
-                <h2 class="skill-title">My Skills</h2>
+                <h2 class="title">My Skills</h2>
 
                 <div class="skill-icons">
                     <div class="skill-icon">
-                        <img class="html-img"  alt="HTML 5 logo" src="./images/html-5.png"> 
+                        <img class="icon-img"  alt="HTML 5 logo" src="./images/html-5.png">
                     </div>
 
                     <div class="skill-icon">
-                        <img class="css-img"  alt="CSS 3 logo" src="./images/css-3.png"> 
+                        <img class="icon-img"  alt="CSS 3 logo" src="./images/css-3.png">
                     </div>
 
                     <div class="skill-icon">
-                        <img class="js-img" src="./images/js.png"> 
+                        <img class="icon-img" src="./images/js.png">
                     </div>
                 </div>
             </div>
@@ -80,7 +79,7 @@
 
         <footer>
             <div class="footer-title">
-                <p>Copyright &copy; The Odin Project 2024</p>
+                <p>Copyright &copy; Nkululeko Jonas</p>
             </div>
         </footer>
     </body>
