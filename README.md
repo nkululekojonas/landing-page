@@ -28,7 +28,7 @@ This is the **Landing Page Project** created as part of [The Odin Project's](htt
 ---
 
 ## 🚀 **Live Demo**
-Check out the live version of the project here: [Landing Page Demo](nkululekojonas.github.io/landing-page)  
+Check out the live version of the project here: [Landing Page Demo](https://nkululekojonas.github.io/landing-page/)  
 ---
 
 ## 📸 **Preview**
@@ -38,4 +38,4 @@ Check out the live version of the project here: [Landing Page Demo](nkululekojon
 ## 🔧 **Installation & Usage**
 1. Clone this repository:  
    ```bash
-      git clone https://github.com/your-username/landing-page-project.git
+      git clone https://github.com/your-username/landing-page.git
